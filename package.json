@@ -14,9 +14,37 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.3.1",
-    "@vuepress/plugin-medium-zoom": "^1.3.1",
-    "vuepress": "^1.3.1"
+    "@vuepress/plugin-back-to-top": "^1.9.10",
+    "@vuepress/plugin-medium-zoom": "^1.9.10",
+    "vuepress": "^1.9.10",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.46.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "chokidar": "^3.6.0",
+    "consolidate": "^1.0.4",
+    "copy-concurrently": "^1.0.5",
+    "docsearch.js": "^2.6.3",
+    "figgy-pudding": "^3.5.2",
+    "fs-write-stream-atomic": "^1.0.10",
+    "glob": "^11.0.0",
+    "har-validator": "^5.1.5",
+    "highlight.js": "^11.10.0",
+    "inflight": "^1.0.6",
+    "mkdirp": "^3.0.1",
+    "move-concurrently": "^1.0.1",
+    "q": "^1.5.1",
+    "request": "^2.88.2",
+    "resolve-url": "^0.2.1",
+    "rimraf": "^6.0.1",
+    "source-map-url": "^0.4.1",
+    "stable": "^0.1.8",
+    "svgo": "^3.3.2",
+    "urix": "^0.1.0",
+    "uuid": "^10.0.0",
+    "vue": "^2.7.16",
+    "vue-server-renderer": "^2.7.16",
+    "webpack-chain": "^6.5.1"
+  }
 }
