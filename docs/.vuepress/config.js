@@ -36,7 +36,7 @@ module.exports = {
     repo: '/mokymai/',
     // repoLabel: 'Contribute!',
     editLinks: true,
-    docsDir: 'docs',
+    base: 'docs',
     editLinkText: 'Atnaujinti šio puslapio informaciją',
     lastUpdated: true,
     smoothScroll: true,
