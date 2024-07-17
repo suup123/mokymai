@@ -7,7 +7,7 @@
     "name": "Ieva Jakšaitytė",
     "email": ""
   },
-  "repository": "https://github.com/ProtingasBlogasLT/pasiruosimas-it-vbe.git",
+  "repository": "https://github.com/suup123/mokymai.git",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"

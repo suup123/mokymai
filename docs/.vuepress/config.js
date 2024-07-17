@@ -33,7 +33,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'ProtingasBlogasLT/informatikos-vbe',
+    repo: 'suup123/mokymai',
     // repoLabel: 'Contribute!',
     editLinks: true,
     docsDir: 'docs',
