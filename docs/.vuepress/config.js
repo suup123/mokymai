@@ -52,6 +52,7 @@ module.exports = {
         items: [
           { text: 'Python', link: '/programavimas-python/' },
           { text: 'C++', link: '/programavimas-cpp/' },
+          { text: 'Golang', link: '/programavimas-go/' },
         ]
       },
       {
@@ -231,6 +232,20 @@ module.exports = {
         //     '/programavimas-python/aaaaa/',
         //   ]
         // },
+      ],
+      '/programavimas-go/': [
+        {
+          title: 'Programavimas Golang',
+          children: [
+            '/programavimas-go/',
+          ]
+        },
+        {
+          title: 'Aritmetiniai veiksmai',
+          children: [
+            '/programavimas-go/aritmetiniai-veiksmai/',
+          ]
+        },
       ],
       '/programavimas-cpp/': [
         {
