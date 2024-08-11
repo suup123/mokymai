@@ -1,3 +1,0 @@
-# Paraščių dydis
-
-Informacija ruošiama.

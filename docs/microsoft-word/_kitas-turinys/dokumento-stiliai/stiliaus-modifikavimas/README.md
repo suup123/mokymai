@@ -1,3 +1,0 @@
-# Stiliaus modifikavimas
-
-Informacija ruošiama.

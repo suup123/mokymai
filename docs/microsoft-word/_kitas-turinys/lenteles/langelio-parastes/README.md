@@ -1,3 +1,0 @@
-# Langelio paraštės
-
-Informacija ruošiama.

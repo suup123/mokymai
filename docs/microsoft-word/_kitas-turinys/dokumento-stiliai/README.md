@@ -1,3 +1,0 @@
-# Dokumento stiliai
-
-Informacija ruošiama.

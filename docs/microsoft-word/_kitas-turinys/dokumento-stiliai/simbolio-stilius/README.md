@@ -1,3 +1,0 @@
-# Simbolio stilius
-
-Informacija ruošiama.

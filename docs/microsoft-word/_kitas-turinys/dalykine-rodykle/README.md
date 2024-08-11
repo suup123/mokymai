@@ -1,3 +1,0 @@
-# Dalykinė rodyklė
-
-Informacija ruošiama.

@@ -1,3 +1,0 @@
-# Lentelės
-
-Informacija ruošiama.

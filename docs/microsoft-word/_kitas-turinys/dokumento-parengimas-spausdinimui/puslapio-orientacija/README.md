@@ -1,3 +1,0 @@
-# Puslapio orientacija
-
-Informacija ruošiama.

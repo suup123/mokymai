@@ -1,10 +1,12 @@
 const { description } = require('../../package')
 
 module.exports = {
+
+  publicPath: process.env.NODE_ENV === "production" ? "/mokymai/" : "/",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Informatikos VBE',
+  title: 'IT Mokymai',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -35,12 +37,8 @@ module.exports = {
   themeConfig: {
     repo: '/mokymai/',
     // repoLabel: 'Contribute!',
-    editLinks: true,
-    base: 'docs',
-    editLinkText: 'Atnaujinti šio puslapio informaciją',
-    lastUpdated: true,
+    docsDir: 'docs',
     smoothScroll: true,
-    lastUpdated: 'Paskutinį kartą atnaujinta',
     nav: [
       { text: 'Pradžia', link: '/' },
       // { text: 'Testas', link: '/testas/' },
@@ -56,10 +54,10 @@ module.exports = {
         ]
       },
       {
-        text: 'Dokumentų tvarkymas',
+        text: 'Front-end pradmenys',
         items: [
-          { text: 'Microsoft Word', link: '/microsoft-word/' },
-          { text: 'Microsoft Excel', link: '/microsoft-excel/' },
+          { text: 'HTML', link: '/html/' },
+          { text: 'CSS', link: '/css/' },
         ]
       },
       { text: 'Paskaitos', link: '/paskaitos/2021-2022/' },
@@ -68,7 +66,7 @@ module.exports = {
       { text: 'Apie mus',
         items: [
           // { text: 'Apie mus', link: '/apie-mus/' },
-          { text: 'Atnaujinimai', link: '/atnaujinimai/' },
+          { text: 'Tikslas', link: '/tikslas/' },
           { text: 'Kontaktai', link: '/kontaktai/' },
         ]
       },
@@ -403,282 +401,145 @@ module.exports = {
           ]
         },
       ],
-      '/microsoft-word/': [
+      '/html': [
         {
-          title: 'Microsoft Word',
+          title: 'HTML istorija',
           children: [
-            '/microsoft-word/',
+            '/html/html-istorija/',
           ]
         },
         {
-          title: 'Kelių lygių sąrašai',
+          title: 'HTML pradmenys',
           children: [
-            '/microsoft-word/keliu-lygiu-sarasai/',
+            '/html/html-pradmenys/',
           ]
         },
         {
-          title: 'Lentelės',
+          title: 'HTML žymės',
           children: [
-            '/microsoft-word/lenteles/',
+            '/html/html-zymes/',
           ]
         },
         {
-          title: 'Dokumento išskaidymas',
+          title: 'HTML atributai',
           children: [
-            '/microsoft-word/dokumento-isskaidymas/',
+            '/html/html-atributai/',
           ]
         },
         {
-          title: 'Puslapių lūžiai',
+          title: 'HTML spalvos',
           children: [
-            '/microsoft-word/puslapiu-luziai/',
+            '/html/html-spalvos/',
           ]
         },
         {
-          title: 'Nuorodos',
+          title: 'HTML formos',
           children: [
-            '/microsoft-word/nuorodos/',
+            '/html/html-formos/',
           ]
-        },
-        {
-          title: 'Puslapinės antraštės ir poraštės',
-          children: [
-            '/microsoft-word/puslapines-antrastes-ir-porastes/',
-          ]
-        },
-        {
-          title: 'Puslapių numeravimas',
-          children: [
-            '/microsoft-word/puslapiu-numeravimas/',
-          ]
-        },
-        {
-          title: 'Antraščių ir pastraipų stilius',
-          children: [
-            '/microsoft-word/antrasciu-ir-pastraipu-stilius/',
-          ]
-        },
-        {
-          title: 'Tabuliavimo žymės',
-          children: [
-            '/microsoft-word/tabuliavimo-zymes/',
-          ]
-        },
-        {
-          title: 'Dalykinės rodyklės',
-          children: [
-            '/microsoft-word/dalykines-rodykles/',
-          ]
-        },
-        {
-          title: 'Puslapio turinys',
-          children: [
-            '/microsoft-word/puslapio-turinys/',
-          ]
-        },
-        // aplanke _kitas-turinys
-        // {
-        //   title: 'Įvadas į Microsoft Word (skirtumai tarp skirtingų Office versijų)',
-        //   children: [
-        //     '/microsoft-word/ivadas-i-microsoft-word/'
-        //   ]
-        // },
-        // {
-        //   title: 'Kelių lygių ženklinti / numeruoti sąrašai',
-        //   children: [
-        //     '/microsoft-word/keliu-lygiu-zenklinti-numeruoti-sarasai/',
-        //     '/microsoft-word/keliu-lygiu-zenklinti-numeruoti-sarasai/naujo-saraso-sukurimas/',
-        //     '/microsoft-word/keliu-lygiu-zenklinti-numeruoti-sarasai/numeruoto-zenklinto-saraso-modifikavimas/',
-        //   ]
-        // },
-        // {
-        //   title: 'Dokumento stiliai',
-        //   children: [
-        //     '/microsoft-word/dokumento-stiliai/',
-        //     '/microsoft-word/dokumento-stiliai/simbolio-stilius/',
-        //     '/microsoft-word/dokumento-stiliai/pastraipos-stilius/',
-        //     '/microsoft-word/dokumento-stiliai/naujo-stiliaus-sukurimas/',
-        //     '/microsoft-word/dokumento-stiliai/stiliaus-modifikavimas/',
-        //   ]
-        // },
-        // {
-        //   title: 'Dokumento automatinis turinys',
-        //   children: [
-        //     '/microsoft-word/dokumento-automatinis-turinys/',
-        //     '/microsoft-word/dokumento-automatinis-turinys/turinio-lygiai/',
-        //     '/microsoft-word/dokumento-automatinis-turinys/automatinio-turinio-formatavimas/',
-        //   ]
-        // },
-        // {
-        //   title: 'Nuorodos',
-        //   children: [
-        //     '/microsoft-word/nuorodos/',
-        //     '/microsoft-word/nuorodos/zymeles/',
-        //     '/microsoft-word/nuorodos/saitai/',
-        //     '/microsoft-word/nuorodos/isnasos/',
-        //   ]
-        // },
-        // {
-        //   title: 'Objektų numeravimas',
-        //   children: [
-        //     '/microsoft-word/objektu-numeravimas/',
-        //     '/microsoft-word/objektu-numeravimas/naujos-etiketes-sukurimas/',
-        //     '/microsoft-word/objektu-numeravimas/kryzmines-nuorodos/',
-        //     '/microsoft-word/objektu-numeravimas/automatinis-objektu-turinio-sudarymas-pagal-etikete/',
-        //   ]
-        // },
-        // {
-        //   title: 'Dalykinė rodyklė',
-        //   children: [
-        //     '/microsoft-word/dalykine-rodykle/',
-        //     '/microsoft-word/dalykine-rodykle/zodziu-itraukimas-i-dalykine-rodykle/',
-        //     '/microsoft-word/dalykine-rodykle/dalykines-rodykles-iterpimas/',
-        //   ]
-        // },
-        // {
-        //   title: 'Teksto skiltys',
-        //   children: [
-        //     '/microsoft-word/teksto-skiltys/',
-        //     '/microsoft-word/teksto-skiltys/skilciu-stulpeliu-sudarymas/',
-        //     '/microsoft-word/teksto-skiltys/luziai-ju-tipai-ir-iterpimas/',
-        //   ]
-        // },
-        // {
-        //   title: 'Puslapinės antraštės / poraštės',
-        //   children: [
-        //     '/microsoft-word/puslapines-antrastes-porastes/',
-        //     '/microsoft-word/puslapines-antrastes-porastes/puslapio-numerio-iterpimas/',
-        //     '/microsoft-word/puslapines-antrastes-porastes/skirtingos-antrastes-porastes/',
-        //   ]
-        // },
-        // {
-        //   title: 'Tabuliacija',
-        //   children: [
-        //     '/microsoft-word/tabuliacija/',
-        //     '/microsoft-word/tabuliacija/tabuliacijos-zymu-tipai/',
-        //     '/microsoft-word/tabuliacija/zymiu-atidejimas-modifikavimas-pasalinimas/',
-        //   ]
-        // },
-        // {
-        //   title: 'Lentelės',
-        //   children: [
-        //     '/microsoft-word/lenteles/',
-        //     '/microsoft-word/lenteles/rikiavimas/',
-        //     '/microsoft-word/lenteles/lenteles-formatavimas/',
-        //     '/microsoft-word/lenteles/langelio-parastes/',
-        //   ]
-        // },
-        // {
-        //   title: 'Dokumento parengimas spausdinimui',
-        //   children: [
-        //     '/microsoft-word/dokumento-parengimas-spausdinimui/',
-        //     '/microsoft-word/dokumento-parengimas-spausdinimui/puslapio-orientacija/',
-        //     '/microsoft-word/dokumento-parengimas-spausdinimui/parasciu-dydis/',
-        //     '/microsoft-word/dokumento-parengimas-spausdinimui/dokumento-eksportavimas-i-pdf/',
-        //   ]
-        // },
+        }
       ],
-      '/microsoft-excel/': [
+      '/css/': [
         {
-          title: 'Microsoft Excel',
+          title: 'CSS',
           children: [
-            '/microsoft-excel/',
+            '/css/',
           ]
         },
         // {
         //   title: 'Įvadas į Microsoft Excel (skirtumai tarp skirtingų Office versijų)',
         //   children: [
-        //     '/microsoft-excel/ivadas-i-microsoft-excel/',
+        //     '/css/ivadas-i-css/',
         //   ]
         // },
         {
           title: 'Santykinės, absoliučiosios ir mišriosios langelių koordinatės',
           children: [
-            '/microsoft-excel/santykines-absoliuciosios-ir-misriosios-langeliu-koordinates/',
+            '/css/santykines-absoliuciosios-ir-misriosios-langeliu-koordinates/',
           ]
         },
         {
           title: 'Matematinės funkcijos',
           children: [
-            '/microsoft-excel/matematines-funkcijos/',
-            // '/microsoft-excel/matematines-funkcijos/sum-funkcija/',
-            // '/microsoft-excel/matematines-funkcijos/abs-funkcija/',
-            // '/microsoft-excel/matematines-funkcijos/sqrt-funkcija/',
-            // '/microsoft-excel/matematines-funkcijos/trunc-funkcija/',
-            // '/microsoft-excel/matematines-funkcijos/round-funkcija/',
-            // '/microsoft-excel/matematines-funkcijos/count-funkcija/',
+            '/css/matematines-funkcijos/',
+            // '/css/matematines-funkcijos/sum-funkcija/',
+            // '/css/matematines-funkcijos/abs-funkcija/',
+            // '/css/matematines-funkcijos/sqrt-funkcija/',
+            // '/css/matematines-funkcijos/trunc-funkcija/',
+            // '/css/matematines-funkcijos/round-funkcija/',
+            // '/css/matematines-funkcijos/count-funkcija/',
           ]
         },
         {
           title: 'Trigonometrinės funkcijos',
           children: [
-            '/microsoft-excel/trigonometrines-funkcijos/',
-            // '/microsoft-excel/trigonometrines-funkcijos/pi-funkcija/',
-            // '/microsoft-excel/trigonometrines-funkcijos/radians-funkcija/',
-            // '/microsoft-excel/trigonometrines-funkcijos/sin-funkcija/',
-            // '/microsoft-excel/trigonometrines-funkcijos/cos-funkcija/',
-            // '/microsoft-excel/trigonometrines-funkcijos/cot-funkcija/',
-            // '/microsoft-excel/trigonometrines-funkcijos/tan-funkcija/',
-            // '/microsoft-excel/trigonometrines-funkcijos/log-funkcija/',
+            '/css/trigonometrines-funkcijos/',
+            // '/css/trigonometrines-funkcijos/pi-funkcija/',
+            // '/css/trigonometrines-funkcijos/radians-funkcija/',
+            // '/css/trigonometrines-funkcijos/sin-funkcija/',
+            // '/css/trigonometrines-funkcijos/cos-funkcija/',
+            // '/css/trigonometrines-funkcijos/cot-funkcija/',
+            // '/css/trigonometrines-funkcijos/tan-funkcija/',
+            // '/css/trigonometrines-funkcijos/log-funkcija/',
           ]
         },
         {
           title: 'Statistinės funkcijos',
           children: [
-            '/microsoft-excel/statistines-funkcijos/',
-            // '/microsoft-excel/statistines-funkcijos/average-funkcija/',
-            // '/microsoft-excel/statistines-funkcijos/min-funkcija/',
-            // '/microsoft-excel/statistines-funkcijos/max-funkcija/',
+            '/css/statistines-funkcijos/',
+            // '/css/statistines-funkcijos/average-funkcija/',
+            // '/css/statistines-funkcijos/min-funkcija/',
+            // '/css/statistines-funkcijos/max-funkcija/',
           ]
         },
         {
           title: 'Datos ir laiko funkcijos',
           children: [
-            '/microsoft-excel/datos-ir-laiko-funkcijos/',
-            // '/microsoft-excel/datos-ir-laiko-funkcijos/today-funkcija/',
-            // '/microsoft-excel/datos-ir-laiko-funkcijos/date-funkcija/',
+            '/css/datos-ir-laiko-funkcijos/',
+            // '/css/datos-ir-laiko-funkcijos/today-funkcija/',
+            // '/css/datos-ir-laiko-funkcijos/date-funkcija/',
           ]
         },
         {
           title: 'Sudėtingesnės (loginės) matematinės funkcijos',
           children: [
-            '/microsoft-excel/sudetingesnes-logines-matematines-funkcijos/',
-            // '/microsoft-excel/sudetingesnes-logines-matematines-funkcijos/countif-funkcija/',
-            // '/microsoft-excel/sudetingesnes-logines-matematines-funkcijos/sumif-funkcija/',
+            '/css/sudetingesnes-logines-matematines-funkcijos/',
+            // '/css/sudetingesnes-logines-matematines-funkcijos/countif-funkcija/',
+            // '/css/sudetingesnes-logines-matematines-funkcijos/sumif-funkcija/',
           ]
         },
         {
           title: 'Loginės funkcijos',
           children: [
-            '/microsoft-excel/logines-funkcijos/',
-            '/microsoft-excel/logines-funkcijos/if-funkcija/',
-            '/microsoft-excel/logines-funkcijos/and-funkcija/',
-            '/microsoft-excel/logines-funkcijos/or-funkcija/',
-            '/microsoft-excel/logines-funkcijos/not-funkcija/',
+            '/css/logines-funkcijos/',
+            '/css/logines-funkcijos/if-funkcija/',
+            '/css/logines-funkcijos/and-funkcija/',
+            '/css/logines-funkcijos/or-funkcija/',
+            '/css/logines-funkcijos/not-funkcija/',
           ]
         },
         {
           title: 'Duomenų rikiavimas pagal kelis raktus',
           children: [
-            '/microsoft-excel/duomenu-rikiavimas-pagal-kelis-raktus/',
+            '/css/duomenu-rikiavimas-pagal-kelis-raktus/',
           ]
         },
         {
           title: 'Filtravimas',
           children: [
-            '/microsoft-excel/filtravimas/',
+            '/css/filtravimas/',
           ]
         },
         {
           title: 'Duomenų atvaizdavimas diagramomis',
           children: [
-            '/microsoft-excel/duomenu-atvaizdavimas-diagramomis/',
+            '/css/duomenu-atvaizdavimas-diagramomis/',
           ]
         },
         {
           title: 'Dokumento paruošimas spausdinimui',
           children: [
-            '/microsoft-excel/dokumento-paruosimas-spausdinimui/',
+            '/css/dokumento-paruosimas-spausdinimui/',
           ]
         },
       ],

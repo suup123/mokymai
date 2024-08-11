@@ -1,10 +1,10 @@
 {
-  "name": "pasiruosimas-it-vbe",
+  "name": "it-mokymai",
   "version": "0.0.1",
-  "description": "Pasiruošimas IT VBE (C++)",
+  "description": "IT Mokymai",
   "main": "index.js",
   "authors": {
-    "name": "Ieva Jakšaitytė",
+    "name": "MB Blokų grandinė",
     "email": ""
   },
   "repository": "https://github.com/suup123/mokymai.git",
