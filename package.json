@@ -9,8 +9,8 @@
   },
   "repository": "https://github.com/suup123/mokymai.git",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "vuepress dev dist",
+    "build": "vuepress build dist"
   },
   "license": "MIT",
   "devDependencies": {

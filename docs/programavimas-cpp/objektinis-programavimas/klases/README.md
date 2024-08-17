@@ -1,3 +1,0 @@
-# Klasės
-
-Informacija ruošiama.

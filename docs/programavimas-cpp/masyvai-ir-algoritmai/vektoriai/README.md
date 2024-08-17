@@ -1,3 +1,0 @@
-# Vektoriai
-
-Informacija ruošiama.

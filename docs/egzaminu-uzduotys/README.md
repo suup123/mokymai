@@ -1,3 +1,0 @@
-# Egzaminų užduotys
-
-Informacija ruošiama.
