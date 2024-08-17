@@ -1,3 +1,0 @@
-# OR funkcija
-
-Informacija ruošiama.

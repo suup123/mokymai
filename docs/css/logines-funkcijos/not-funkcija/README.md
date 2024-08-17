@@ -1,3 +1,0 @@
-# NOT funkcija
-
-Informacija ruošiama.

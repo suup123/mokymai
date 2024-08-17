@@ -1,4 +1,0 @@
-# AND funkcija
-
-Informacija ruošiama.
-

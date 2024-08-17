@@ -1,3 +1,0 @@
-# Sąrašai (lists)
-
-Informacija ruošiama.
