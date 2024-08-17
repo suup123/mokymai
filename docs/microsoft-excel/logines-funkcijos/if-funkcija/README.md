@@ -1,3 +1,0 @@
-# IF funkcija
-
-Informacija ruošiama.

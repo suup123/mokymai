@@ -1,3 +1,0 @@
-# Nuorodos
-
-Informacija ruošiama.

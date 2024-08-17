@@ -1,3 +1,0 @@
-# Žodynai (dictionaries)
-
-Informacija ruošiama.

@@ -1,3 +1,0 @@
-# Pastraipos stilius
-
-Informacija ruošiama.

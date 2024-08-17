@@ -1,3 +1,0 @@
-# Teksto skiltys
-
-Informacija ruošiama.

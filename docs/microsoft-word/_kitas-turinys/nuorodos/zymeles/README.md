@@ -1,3 +1,0 @@
-# Žymelės
-
-Informacija ruošiama.

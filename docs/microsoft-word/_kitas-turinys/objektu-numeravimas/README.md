@@ -1,3 +1,0 @@
-# Objektų numeravimas
-
-Informacija ruošiama.

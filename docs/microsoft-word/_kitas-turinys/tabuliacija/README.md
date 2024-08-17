@@ -1,3 +1,0 @@
-# Tabuliacija
-
-Informacija ruošiama.

@@ -1,3 +1,0 @@
-# Loginės funkcijos
-
-Informacija ruošiama.

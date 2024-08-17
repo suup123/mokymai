@@ -1,3 +1,0 @@
-# Filtravimas
-
-Informacija ruošiama.

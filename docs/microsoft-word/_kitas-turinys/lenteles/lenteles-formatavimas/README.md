@@ -1,3 +1,0 @@
-# Lentelės formatavimas
-
-Informacija ruošiama.

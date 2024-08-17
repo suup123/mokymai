@@ -1,3 +1,0 @@
-# Rikiavimas
-
-Informacija ruošiama.
